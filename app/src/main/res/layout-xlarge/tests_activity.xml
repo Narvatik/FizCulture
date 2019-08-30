@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/testContainer"
+    android:layout_height="match_parent">
+
+
+    <Button
+        android:id="@+id/TestAnswer1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="99dp"
+        android:layout_marginLeft="99dp"
+        android:layout_marginTop="82dp"
+        android:onClick="onClick"
+        android:text="Ответ1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TestQuestionText" />
+
+    <Button
+        android:id="@+id/TestAnswer2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="81dp"
+        android:onClick="onClick"
+        android:text="Ответ2"
+        app:layout_constraintStart_toEndOf="@+id/TestAnswer1"
+        app:layout_constraintTop_toBottomOf="@+id/TestQuestionText" />
+
+    <Button
+        android:id="@+id/TestAnswer3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="99dp"
+        android:layout_marginLeft="99dp"
+        android:layout_marginTop="23dp"
+        android:onClick="onClick"
+        android:text="Ответ3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TestAnswer1" />
+
+    <Button
+        android:id="@+id/TestAnswer4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="24dp"
+        android:onClick="onClick"
+        android:text="Ответ4"
+        app:layout_constraintStart_toEndOf="@+id/TestAnswer3"
+        app:layout_constraintTop_toBottomOf="@+id/TestAnswer2" />
+
+    <TextView
+        android:id="@+id/TestQuestionText"
+        android:layout_width="207dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="99dp"
+        android:layout_marginLeft="99dp"
+        android:layout_marginTop="137dp"
+        android:text="Здесь будет ваш вопрос"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/next_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="263dp"
+        android:layout_marginLeft="263dp"
+        android:layout_marginTop="189dp"
+        android:onClick="onClick"
+        android:text="Далее"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TestAnswer4" />
+
+    <Button
+        android:id="@+id/MenuTestBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:onClick="onClick"
+        android:text="Меню"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

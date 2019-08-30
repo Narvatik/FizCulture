@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">FizCulture</string>
+    <string name="status1">Я-преподаватель</string>
+    <string name="choose_week_student">Выберите неделю</string>
+</resources>

@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/studentContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/studenttts_back">
+
+    <TextView
+        android:id="@+id/textView38"
+        android:layout_width="125dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="73dp"
+        android:text="Норматив по наклонам: \n 13 см"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="125dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="23dp"
+        android:text="Норматив по прыжкам: \n 230 см"
+        app:layout_constraintBottom_toTopOf="@+id/textView38"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="125dp"
+        android:layout_height="54dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="28dp"
+        android:text="Норматив по \nбегу: \n 13 сек"
+        app:layout_constraintBottom_toTopOf="@+id/textView7"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/openCalendar"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="164dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginLeft="68dp"
+        android:onClick="onClick"
+        android:text="Выберите неделю"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintBaseline_toBaselineOf="@+id/open_standard_results"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/lesson1_date"
+        android:layout_width="84dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="244dp"
+        android:text="Занятие от 10 апреля"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/checkBox29"
+        app:layout_constraintTop_toBottomOf="@+id/menuBtnStudent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/lesson2_date"
+        android:layout_width="84dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginRight="27dp"
+        android:layout_marginBottom="42dp"
+        android:text="Занятие от 13 апреля"
+        app:layout_constraintBottom_toTopOf="@+id/lesson3_date"
+        app:layout_constraintEnd_toStartOf="@+id/checkBox30" />
+
+    <TextView
+        android:id="@+id/lesson3_date"
+        android:layout_width="84dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginRight="27dp"
+        android:layout_marginBottom="70dp"
+        android:text="Занятие от 16 апреля"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/checkBox31" />
+
+    <Button
+        android:id="@+id/open_standard_results"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="115dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        android:onClick="onClick"
+        android:text="Нормативы"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+    <CheckBox
+        android:id="@+id/checkBox29"
+        android:layout_width="96dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginRight="33dp"
+        android:layout_marginBottom="46dp"
+        android:checked="true"
+        android:clickable="false"
+        android:text="Посетил"
+        app:layout_constraintBottom_toTopOf="@+id/checkBox30"
+        app:layout_constraintEnd_toStartOf="@+id/textView11" />
+
+    <CheckBox
+        android:id="@+id/checkBox30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="27dp"
+        android:layout_marginRight="27dp"
+        android:layout_marginBottom="47dp"
+        android:clickable="false"
+        android:text="Не посетил"
+        app:layout_constraintBottom_toTopOf="@+id/checkBox31"
+        app:layout_constraintEnd_toStartOf="@+id/textView7" />
+
+    <CheckBox
+        android:id="@+id/checkBox31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="27dp"
+        android:layout_marginRight="27dp"
+        android:layout_marginBottom="83dp"
+        android:clickable="false"
+        android:text="Не посетил"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textView38" />
+
+    <TextView
+        android:id="@+id/Student_information"
+        android:layout_width="0dp"
+        android:layout_height="134dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginRight="70dp"
+        android:text="Информация о студенте"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tests" />
+
+    <Button
+        android:id="@+id/menuBtnStudent"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="86dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="26dp"
+        android:onClick="onClick"
+        android:text="Меню"
+        app:layout_constraintBottom_toTopOf="@+id/Student_information"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/tests"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="86dp"
+        android:layout_height="44dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:onClick="onClick"
+        android:text="Тесты"
+        app:layout_constraintBaseline_toBaselineOf="@+id/menuBtnStudent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="70dp"
+        android:layout_marginRight="70dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toStartOf="@+id/Student_information"
+        app:layout_constraintGuide_begin="244dp"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="382dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="90dp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="17dp"
+        android:layout_height="11dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/treugolnik"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/textView11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Student_information"
+        app:srcCompat="@drawable/treugolnik" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="38dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:background="@drawable/kalekndar_ikonka"
+        app:layout_constraintBottom_toBottomOf="@+id/openCalendar"
+        app:layout_constraintEnd_toStartOf="@+id/openCalendar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/openCalendar"
+        app:srcCompat="@drawable/kalekndar_ikonka" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="20dp"
+        android:layout_height="10dp"
+        android:background="@drawable/treugolnik"
+        app:layout_constraintBottom_toBottomOf="@+id/menuBtnStudent"
+        app:layout_constraintStart_toEndOf="@+id/menuBtnStudent"
+        app:layout_constraintTop_toTopOf="@+id/menuBtnStudent"
+        app:srcCompat="@drawable/treugolnik" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="32dp"
+        android:layout_height="39dp"
+        android:background="@drawable/test_partial_passed"
+        app:layout_constraintBottom_toBottomOf="@+id/menuBtnStudent"
+        app:layout_constraintEnd_toStartOf="@+id/tests"
+        app:layout_constraintTop_toTopOf="@+id/menuBtnStudent"
+        app:srcCompat="@drawable/test_partial_passed" />
+
+</android.support.constraint.ConstraintLayout>
